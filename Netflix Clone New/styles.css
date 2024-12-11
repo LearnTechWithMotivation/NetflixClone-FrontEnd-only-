@@ -93,7 +93,7 @@ li.lang {
 
 }
 
-.lang img {
+li.lang img {
     height: 3vh;
     /* filter: invert(100%); */
     padding-left: 15%;
@@ -264,11 +264,13 @@ input.emailBox {
 }
 
 .questions{
-    padding-bottom: 5%;
+    padding-bottom: 1%;
 }
 .question{
     display: flex;
     align-items: center;
+    justify-content: center;
+    
     height: 4rem;
 
 }
@@ -277,6 +279,8 @@ input.emailBox {
 .question svg{
     filter: invert(100%);
     height: 4rem;
+    margin-left: auto;
+    /* align-self: last baseline; */
     
 }
 
@@ -286,6 +290,9 @@ input.emailBox {
     background-color: black;
     /* background-image: none; */
     /* height: 15vw; */
+    padding: 8%;
+    
+
     text-align: center;
 }
 
@@ -303,14 +310,25 @@ input.emailBox {
     display: grid;
     grid-template-rows: repeat(4,1fr);
     grid-template-columns: repeat(4,1fr);
+    text-decoration: underline;
+
     
 }
 
+.gridDetails div{
+    padding: 5%;
+    /* gap: 20%; */
+}
+
+.gridDetails div:hover{
+    cursor: pointer;
+}
 .areaOne{
     grid-row: 1/1;
     text-align: left;
     font-size: 1.2rem;
     /* padding: 5%; */
+    color: #AAAAAA;
     grid-column: 1/5;
 }
 
@@ -318,3 +336,24 @@ input.emailBox {
     grid-row: 2/2;
     grid-column: auto;
 } */
+
+div.lang{
+    margin-top: 5%;
+    margin-left: 5%;
+    border: 1px solid white;
+    width: 10vw;
+    border-radius: .25em;
+    padding: .2%;
+    
+}
+
+div.lang img{
+    height: 3vh;
+}
+
+.signature{
+    color:#AAAAAA;
+    padding-left: 5%;
+    padding-top: 5%;
+    text-align: left;
+}
